@@ -1,84 +1,65 @@
 package io.cucumber.juliarwalter;
 
 import io.cucumber.java.pt.*;
+import io.cucumber.juliarwalter.services.Comando;
 
 public class CenarioSteps1 {
 
     @Quando("acesso o site da Tricentis: {string}")
     public void acesso_o_site_da_Tricentis(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Comando.abrir(string);
     }
-    
-    @Dado("que clico na opcao Make")
-    public void que_clico_na_opcao_Make() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+    @Dado("que clico em Automobile")
+    public void que_clico_em_Automobile() {
+        Comando.seletorQueryCss("#nav_automobile").click();
     }
-    
-    @Dado("seleciono a opcao {string}")
-    public void seleciono_a_opcao(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+
+    @Dado("clico na opcao Make: Audi")
+    public void clico_na_opcao_Make_Audi() {
+        Comando.seletorQueryXpath("//*[@id='make']/option[2]").click();
+    }  
     
     @Dado("preencho o campo Engine Performance [kW]: {string}")
     public void preencho_o_campo_Engine_Performance_kW(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Comando.seletorQueryXpath("//*[@id='engineperformance']").sendKeys(string);
     }
     
     @Dado("informo a Date of Manufacture: {string}")
     public void informo_a_Date_of_Manufacture(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Comando.seletorQueryXpath("//*[@id='dateofmanufacture']").sendKeys(string);
     }
     
-    @Dado("clico na opcao Number of Seats")
+    @Dado("clico na opcao Number of Seats 5")
     public void clico_na_opcao_Number_of_Seats() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Comando.seletorQueryXpath("//*[@id='numberofseats']/option[6]").click();
     }
-    
-    @Dado("seleciono a opcao {int}")
-    public void seleciono_a_opcao(Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-    
-    @Dado("clico na opcao Fuel Type")
-    public void clico_na_opcao_Fuel_Type() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-    
-    @Dado("seleciono a opcao Eletric Power")
-    public void seleciono_a_opcao_Eletric_Power() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+    @Dado("clico na opcao Fuel Type: Eletric Power")
+    public void clico_na_opcao_Fuel_Type_Eletric_Power() {
+        Comando.seletorQueryXpath("//*[@id='fuel']/option[4]").click();
+ 
     }
     
     @Dado("informo a List Price [$]: {string}")
     public void informo_a_List_Price_$(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Comando.seletorQueryCss("#listprice").sendKeys(string);
+
     }
     
     @Dado("informo a License Plate Number: {string}")
     public void informo_a_License_Plate_Number(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Comando.seletorQueryCss("#licenseplatenumber").sendKeys(string);
+
     }
     
     @Dado("informo a Annual Mileage [mi]: {string}")
     public void informo_a_Annual_Mileage_mi(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Comando.seletorQueryCss("#annualmileage").sendKeys(string);
     }
     
     @Entao("devo clicar em {string}")
     public void devo_clicar_em(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Comando.seletorQueryXpath("//*[@id='nextenterinsurantdata']").click();
     }
 }

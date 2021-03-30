@@ -58,8 +58,8 @@ public class CenarioSteps1 {
         Comando.seletorQueryCss("#annualmileage").sendKeys(string);
     }
     
-    @Entao("devo clicar em {string}")
-    public void devo_clicar_em(String string) {
+    @Entao("devo clicar em Next")
+    public void devo_clicar_em() {
         Comando.seletorQueryXpath("//*[@id='nextenterinsurantdata']").click();
     }
 }

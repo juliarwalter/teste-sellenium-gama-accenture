@@ -10,7 +10,7 @@ Funcionalidade: Acessar o site da Tricentis e preencher todos os campos da aba E
 	E informo a Date of Manufacture: "07/23/2019"
 	E clico na opcao Number of Seats 5	
 	E clico na opcao Fuel Type: Eletric Power
-	E informo a List Price [$]: "110398"
+	E informo a List Price [$]: "100000"
 	E informo a License Plate Number: "ABC 123"
 	E informo a Annual Mileage [mi]: "1500"
-	Entao devo clicar em "Next"
+	Entao devo clicar em Next

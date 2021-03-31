@@ -6,60 +6,60 @@ import io.cucumber.juliarwalter.services.Comando;
 public class CenarioSteps1 {
 
     @Quando("acesso o site da Tricentis: {string}")
-    public void acesso_o_site_da_Tricentis(String string) {
+    public void acessoSiteTricentis(String string) {
         Comando.abrir(string);
     }
 
     @Dado("que clico em Automobile")
-    public void que_clico_em_Automobile() {
+    public void clicoAutomobile() {
         Comando.seletorQueryCss("#nav_automobile").click();
     }
 
     @Dado("clico na opcao Make: Audi")
-    public void clico_na_opcao_Make_Audi() {
+    public void clicoMakeAudi() {
         Comando.seletorQueryXpath("//*[@id='make']/option[2]").click();
     }  
     
     @Dado("preencho o campo Engine Performance [kW]: {string}")
-    public void preencho_o_campo_Engine_Performance_kW(String string) {
+    public void enginePerformance(String string) {
         Comando.seletorQueryXpath("//*[@id='engineperformance']").sendKeys(string);
     }
     
     @Dado("informo a Date of Manufacture: {string}")
-    public void informo_a_Date_of_Manufacture(String string) {
+    public void dateManufacture(String string) {
         Comando.seletorQueryXpath("//*[@id='dateofmanufacture']").sendKeys(string);
     }
     
     @Dado("clico na opcao Number of Seats 5")
-    public void clico_na_opcao_Number_of_Seats() {
+    public void clicoNumberSeats() {
         Comando.seletorQueryXpath("//*[@id='numberofseats']/option[6]").click();
     }
 
     @Dado("clico na opcao Fuel Type: Eletric Power")
-    public void clico_na_opcao_Fuel_Type_Eletric_Power() {
+    public void clicoFuelEletricPower() {
         Comando.seletorQueryXpath("//*[@id='fuel']/option[4]").click();
  
     }
     
     @Dado("informo a List Price [$]: {string}")
-    public void informo_a_List_Price_$(String string) {
+    public void listPrice(String string) {
         Comando.seletorQueryCss("#listprice").sendKeys(string);
 
     }
     
     @Dado("informo a License Plate Number: {string}")
-    public void informo_a_License_Plate_Number(String string) {
+    public void licensePlateNumber(String string) {
         Comando.seletorQueryCss("#licenseplatenumber").sendKeys(string);
 
     }
     
     @Dado("informo a Annual Mileage [mi]: {string}")
-    public void informo_a_Annual_Mileage_mi(String string) {
+    public void annualMileage(String string) {
         Comando.seletorQueryCss("#annualmileage").sendKeys(string);
     }
     
     @Entao("devo clicar em Next")
-    public void devo_clicar_em() {
+    public void clicarNext1() {
         Comando.seletorQueryXpath("//*[@id='nextenterinsurantdata']").click();
     }
 }

@@ -203,16 +203,16 @@ import org.openqa.selenium.edge.EdgeDriver;
     |  |  |  |  |  |-- CenarioSteps5.java -- Passos escritos em java com selenium abrindo o browser e preenchenco a aba Send Quote <br>
     |  |  |  |  |  |-- RunCucumberTest.java -- Arquivo que configura a inicialização do Java test <br> 
     |  |  |  |  |  |-- services <br>
-    |  |  |  |  |  |  |-- Comando.java <br> -- Arquivo que configura (inicialização e comandos) o Java test <br> 
+    |  |  |  |  |  |  |-- Comando.java -- Configura comandos no Java test <br> 
     |  |-- resources <br>
     |  |  |-- io <br>
     |  |  |  |-- cucumber <br>
     |  |  |  |  |-- juliarwalter <br>
-    |  |  |  |  |  |-- CenarioDeTeste1.feature -- Gherkin com os cenários peencher campos da aba Enter Vehicle Data <br>
-    |  |  |  |  |  |-- CenarioDeTeste2.feature -- Gherkin com os cenários peencher campos da aba Enter Insurant Data <br>
-    |  |  |  |  |  |-- CenarioDeTeste3.feature -- Gherkin com os cenários peencher campos da aba Enter Product Data <br>
-    |  |  |  |  |  |-- CenarioDeTeste4.feature -- Gherkin com os cenários peencher campos da aba Price Option <br>
-    |  |  |  |  |  |-- CenarioDeTeste5.feature -- Gherkin com os cenários peencher campos da aba Send Quote <br>
+    |  |  |  |  |  |-- CenarioDeTeste1.feature -- Gherkin com os cenários: peencher campos da aba Enter Vehicle Data <br>
+    |  |  |  |  |  |-- CenarioDeTeste2.feature -- Gherkin com os cenários: peencher campos da aba Enter Insurant Data <br>
+    |  |  |  |  |  |-- CenarioDeTeste3.feature -- Gherkin com os cenários: peencher campos da aba Enter Product Data <br>
+    |  |  |  |  |  |-- CenarioDeTeste4.feature -- Gherkin com os cenários: peencher campos da aba Price Option <br>
+    |  |  |  |  |  |-- CenarioDeTeste5.feature -- Gherkin com os cenários: peencher campos da aba Send Quote <br>
   test.bat -- Arquivo para rodar teste no Windows<br>
   test.sh -- Arquivo para rodar teste no Unix<br>
 </pre>
